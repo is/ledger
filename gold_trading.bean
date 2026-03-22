@@ -1,23 +1,24 @@
 ; Beancount Gold Trading Ledger
 
-option "date_format" "%Y-%m-%d"
+option "operating_currency" "CNY"
 
 2026-01-01 open Assets:Bank CNY
-2026-01-01 open Assets:投资黄金 CNY
+2026-01-01 open Assets:Gold GOLD
 2026-01-01 open Expenses:Gold CNY
 2026-01-01 open Income:Gold CNY
+2026-01-01 open Equity:Opening-Balances CNY
 
-2026-02-02 commodity GOLD
+2026-01-01 txn "Initial Balance"
+  Assets:Bank         100000.00 CNY
+  Equity:Opening-Balances  -100000.00 CNY
+
+2026-01-01 commodity GOLD
   name: "Gold"
 
-2026-02-02 price GOLD 2026-02-02 CNY 1160.92
-
-2026-02-02 txn "Initial Balance"
-  Assets:Bank         100000.00 CNY
-  Equity:Opening-Balances
+2026-02-02 price GOLD 1160.92 CNY
 
 2026-02-02 txn "买入黄金"
   Assets:Bank        -94034.77 CNY
   Assets:Gold       81.0004 GOLD @@ 94034.77 CNY
 
-2026-03-22 price GOLD 2026-03-22 CNY 1000.34
+2026-03-22 price GOLD 1000.34 CNY
