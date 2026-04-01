@@ -35,19 +35,19 @@ option "operating_currency" "CNY"
 2026-03-24 price GOLD 977.44 CNY
 
 2026-03-27 txn "Sell Gold"
-  Assets:Gold       -10.0004 GOLD @@ 10000.40
-  Assets:Bank       10000.40
+  Assets:Gold       -10.0004 GOLD @@ 10000.40 CNY
+  Assets:Bank       10000.40 CNY
 
 2026-03-27 price GOLD 1002.20 CNY
 2026-04-01 price GOLD 1040.00 CNY
 
 2026-04-01 txn "Buy SH518880"
   Assets:Bank       -4971 CNY
-  Assets:EA:518880  500 SH518880 @@ 4971 CNY
+  Assets:EA:SH518880  500 SH518880 @@ 4971 CNY
 
 2026-04-01 txn "Buy SH518880"
   Assets:Bank       -4972.5 CNY
-  Assets:EA:518880  500 SH518880 @@ 4972.5 CNY
+  Assets:EA:SH518880  500 SH518880 @@ 4972.5 CNY
 
 
 
