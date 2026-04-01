@@ -7,6 +7,7 @@ option "operating_currency" "CNY"
 2026-01-01 open Expenses:Gold CNY
 2026-01-01 open Income:Gold CNY
 2026-01-01 open Equity:Opening-Balances CNY
+2026-01-01 open Assets:EA:SH518880
 
 2026-01-01 txn "Initial Balance"
   Assets:Bank         100000.00 CNY
@@ -14,6 +15,9 @@ option "operating_currency" "CNY"
 
 2026-01-01 commodity GOLD
   name: "Gold"
+
+2026-01-01 commodity SH518880
+  name: "SH518880"
 
 2026-02-02 price GOLD 1160.92 CNY
 
@@ -35,3 +39,15 @@ option "operating_currency" "CNY"
   Assets:Bank       10000.40
 
 2026-03-27 price GOLD 1002.20 CNY
+2026-04-01 price GOLD 1040.00 CNY
+
+2026-04-01 txn "Buy SH518880"
+  Assets:Bank       -4971 CNY
+  Assets:EA:518880  500 SH518880 @@ 4971 CNY
+
+2026-04-01 txn "Buy SH518880"
+  Assets:Bank       -4972.5 CNY
+  Assets:EA:518880  500 SH518880 @@ 4972.5 CNY
+
+
+
